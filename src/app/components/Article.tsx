@@ -20,6 +20,7 @@ export function Article() {
         onValueChange={(value: string) => setText(value)}
         placeholder="Please write content"
         autosuggestionsConfig={{
+          // タイトルの内容に基づいて文章が補完されるように設定
           textareaPurpose: `research a blog article topic on ${title}`,
           chatApiConfigs: {
             suggestionsApiConfig: {
