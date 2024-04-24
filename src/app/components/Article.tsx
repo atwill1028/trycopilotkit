@@ -4,7 +4,6 @@ import { CopilotTextarea } from "@copilotkit/react-textarea";
 import { useState } from "react";
 import Image from "next/image";
 import { RotateCcw } from "lucide-react";
-
 import { Prediction } from "replicate";
 import { Button } from "@/components/ui/button";
 const sleep = (ms: number) => new Promise((r) => setTimeout(r, ms));
@@ -59,9 +58,6 @@ export function Article() {
               height={350}
               className="object-cover rounded-md border-gray-300"
             />
-            {/* <p className="mt-4 text-lg text-gray-700">
-              status: {prediction.status}
-            </p> */}
           </div>
         ) : (
           <div className="flex flex-col items-center justify-center w-full">
